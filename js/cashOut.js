@@ -12,7 +12,7 @@ document.getElementById('cashOutBtn').addEventListener('click', function (event)
     if (pinValue === 1234) {
         const balance = getTextValueById('accBalance');
         if (addMoneyValue > balance) {
-            alert('Failed to add money');
+            alert('Failed to cash out.');
             return;
         }
         const newBalance = balance - addMoneyValue;
