@@ -28,13 +28,13 @@
                         <!-- options end -->
                         <button id="showAddBtn" class="btn btn-lg">Add Money</button>
                         <button id="showOutBtn" class="btn btn-lg">Cash Out</button>
-                        <button id="showTransBtn" class="btn btn-lg">Transaction</button>
+                        <button id="showTransBtn" class="btn btn-lg">Transaction History</button>
                     </div>
                     <div class="divider"></div>
                     <!-- Available Balance show end -->
 
                     <!-- form add money section start -->
-                    <div id="addMoneySection" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <div id="addMoneySection" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                         <form class="card-body">
                             <div class="form-control">
                                 <label class="label">
@@ -58,7 +58,7 @@
                     <!-- form add money section end -->
 
                     <!-- form cash out start -->
-                    <div id="cashOutSection" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <div id="cashOutSection" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                         <form class="card-body">
                             <div class="form-control">
                                 <label class="label">
@@ -81,7 +81,10 @@
                     </div>
                     <!-- form cash out end -->
                     <div id="transactionSection" class="hidden">
-                        <div class="text-5xl text-center">Transaction</div>
+                        <h2 class="text-3xl text-center">Transaction History</h2>
+                        <div id="transaction-container" class="space-y-3">
+                            
+                        </div>
                     </div>
                 </div>
             </div>
